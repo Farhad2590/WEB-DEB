@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        li{
+            color: blue;
+        }
+        .important-places{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welocome To My DOM</h1>
+    </header>
+    <main>
+        <section>
+            <h1>My Awsome Dom De Baba</h1>
+            <ul>
+                <li>Hi</li>
+                <li>Hlw</li>
+                <li>Bye</li>
+                <li>Na</li>
+                <li>Kno</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-item">Fruits I Like</h1>
+            <ul>
+                <li class="important-places">Apple</li>
+                <li class="important-places">Orange</li>
+                <li class="important-places">Bannana</li>
+                <li class="important-places">Mango</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Places I Like To Visit</h1>
+            <ul>
+                <li>Sundarban</li>
+                <li>CoxsBazar</li>
+                <li>Bandarban</li>
+                <li>Sithakundo</li>
+                <li>Rangamati</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        for(const li of liCollection){
+            // console.log(li.innerText);
+    
+        }
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            // console.log(h1.innerText);
+        }
+        // console.log(liCollection);
+    //    const student = {
+    //     name: 'Abul',
+    //     id: 11,
+    //     study: function(time){
+    //         console.log(time, 'Study Kortese');
+    //     }
+    //    }
+    </script>
+    <script src="Js/dom.js"></script>
+</body>
+
+</html>
